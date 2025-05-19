@@ -6,6 +6,7 @@ import navImg from '@/../public/nav/Starter.png';
 // react icons
 import {IoIosSearch} from "react-icons/io";
 import { CiMenuFries } from 'react-icons/ci';
+import Link from "next/link";
 
 export default function Navber() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -16,13 +17,15 @@ export default function Navber() {
                  <nav className="flex items-center justify-between w-full relative container">
 
             {/* logo */}
-            <Image src={navImg} alt="logo" className="w-[170px]"/>
+             <Link href="/"><Image src={navImg} alt="logo" className="w-[170px]"/></Link>
 
             {/* nav menus */}
             <ul className="items-center gap-[28px] text-[1rem] text-white md:flex hidden ms-auto">  
-                <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer hover:text-[#3B9DF8] capitalize font-bold text-2xl text-slat">blog</li>
-                <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer hover:text-[#3B9DF8] capitalize font-bold text-2xl text-slat">Newsletter
+                 <a className="like" href="/Blog"><li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer hover:text-[#3B9DF8] capitalize font-bold text-2xl text-slat">blog</li></a>
+                 <a className="like" href="/Subcribe">
+                      <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer hover:text-[#3B9DF8] capitalize font-bold text-2xl text-slat">Newsletter
                 </li>
+                 </a>
                 <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer hover:text-[#3B9DF8] capitalize font-bold text-2xl text-slat">Twitter</li>
             </ul>
              

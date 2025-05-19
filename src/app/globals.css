@@ -1,2 +1,6 @@
 @import "tailwindcss";
 
+.like{
+    color: white;
+    text-decoration: none;
+}

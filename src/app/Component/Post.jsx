@@ -3,6 +3,7 @@ import postImg2 from '@/../public/nav/post (2).png';
 import postImg3 from '@/../public/nav/post (3).png';
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import Image from 'next/image'; 
+import Link from 'next/link';
 export default function Post() {
     return (
         <>
@@ -13,17 +14,19 @@ export default function Post() {
                      <div className='d-flex justify-content-between align-items-center'>
                          <h2 className='className="font-bold text-[48px] text-white my-4"'>Latest <span className=" text-blue-400">Posts </span> </h2>
 
-                           <div className='d-flex align-items-center hover:cursor-pointer' >
+                           <Link href="/Blog" className='text-white text-[20px] font-bold flex items-center gap-2 hover:text-blue-400 transition-all duration-300'>
+                          <div className='d-flex align-items-center hover:cursor-pointer' >
                             <span className='font-bold text-[20px] text-[#f8fafc]'>View all Posts</span>
                             <span className='text-white text-2xl ms-2'><FaRegArrowAltCircleRight /></span>
                            </div>
+                           </Link>
                      </div>
                       
                  <div className="row">
                        <div className="col-lg-4 col-md-6 col-sm-12">
                            
-                      <div className="shadow-lg text-white bg-[rgba(30,41,59,0.4)] rounded-[20px] mt-5 flex flex-col items-center overflow-hidden">
-                         <Image src={postImg3} alt="post image" className="w-full h-auto object-cover" />
+                      <div className="shadow-lg text-white bg-[rgba(30,41,59,0.4)] rounded-[20px] mt-5 flex flex-col items-center overflow-hidden hover:scale-105 transition-transform duration-300 hover:cursor-pointer">
+                         <Image src={postImg3} alt="post image" className='img-fluid' />
 
                             <div className="p-3 text-center">
                                  <h4 className="font-bold text-2xl sm:text-[24px] text-[#f8fafc]">Lorem ipsum dolor</h4>
@@ -36,8 +39,8 @@ export default function Post() {
 
                        <div className="col-lg-4 col-md-6 col-sm-12">
 
-                            <div className="shadow-lg text-white bg-[rgba(30,41,59,0.4)] rounded-[20px] mt-5 flex flex-col items-center overflow-hidden">
-                         <Image src={postImg2} alt="post image" className="w-full h-auto object-cover" />
+                            <div className="shadow-lg text-white bg-[rgba(30,41,59,0.4)] rounded-[20px] mt-5 flex flex-col items-center overflow-hidden hover:scale-105 transition-transform duration-300 hover:cursor-pointer ">
+                         <Image src={postImg2} alt="post image" className="img-fluid" />
 
                             <div className="p-3 text-center">
                                  <h4 className="font-bold text-2xl sm:text-[24px] text-[#f8fafc]">Lorem ipsum dolor</h4>
@@ -49,8 +52,8 @@ export default function Post() {
                        </div>
                        <div className="col-lg-4 col-md-6 col-sm-12">
                             
-                            <div className="shadow-lg text-white bg-[rgba(30,41,59,0.4)] rounded-[20px] mt-5 flex flex-col items-center overflow-hidden">
-                         <Image src={postImg} alt="post image" className="w-full h-auto object-cover" />
+                            <div className="shadow-lg text-white bg-[rgba(30,41,59,0.4)] rounded-[20px] mt-5 flex flex-col items-center overflow-hidden hover:scale-105 transition-transform duration-300 hover:cursor-pointer ">
+                         <Image src={postImg} alt="post image" className="img-fluid" />
 
                             <div className="p-3 text-center">
                                  <h4 className="font-bold text-2xl sm:text-[24px] text-[#f8fafc]">Lorem ipsum dolor</h4>
